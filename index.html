@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Widget</title>
+    <script src="./lib/jquery/jquery-1.8.2.js" charset="utf-8"></script>
+    <script src="./lib/jquery/jquery-ui.js" charset="utf-8"></script>
+    <script src="lib/gitter/jquery.gritter.js" charset="utf-8"></script>
+    <script src="lib/handlebars/handlebars-v4.0.5.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/jquery.gritter.css"/>
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css"/>
+</head>
+<body>
+
+    <h1>User Information</h1>
+		<h4>To see more information on each user click on their details in th table below:</h4>
+        <div id="myDashboard">
+            <script src="javascript/main.js" id="my_data_table" type="text/x-handlebars">
+                <table border="1px" class="table table-condensed">
+                    {{#each users}}
+                    <tr>
+                        <td name="{{name}}">{{name}}</td>
+                        <td>{{surname}}</td>
+                        <td>{{email}}</td>
+                    </tr>
+                    {{/each}}
+                </table>
+            </script>
+        </div>
+    
+    
+    
+    <script src="javascript/main.js" charset="utf-8"></script>
+</body>
+</html>
